@@ -1,0 +1,131 @@
+{
+  "positions": {
+    "source1": {
+      "x": 55,
+      "y": 82
+    },
+    "source2": {
+      "x": 158,
+      "y": 82
+    },
+    "process1": {
+      "x": 450,
+      "y": 82
+    },
+    "process2": {
+      "x": 650,
+      "y": 82
+    },
+    "sink": {
+      "x": 945,
+      "y": 82
+    }
+  },
+  "safe_y": 200,
+  "transfer": [
+    {
+      "setY": "safe_y"
+    },
+    {
+      "setX": "source",
+      "setY": "safe_y"
+    },
+    {
+      "setX": "source",
+      "setY": "source_y"
+    },
+    {
+      "vacuum": 1
+    },
+    {
+      "setX": "source",
+      "setY": "safe_y"
+    },
+    {
+      "setX": "destination",
+      "setY": "safe_y"
+    },
+    {
+      "setX": "destination",
+      "setY": "destination_y"
+    },
+    {
+      "vacuum": 0
+    },
+    {
+      "setX": "destination",
+      "setY": "safe_y"
+    }
+  ],
+  "actions": [
+    {
+      "wait_sensor": 17,
+      "value": 1
+    },
+    {
+      "setY": 200
+    },
+    {
+      "vacuum": 0
+    },
+    {
+      "setX": 55,
+      "setY": 200
+    },
+    {
+      "setX": 55,
+      "setY": 82
+    },
+    {
+      "vacuum": 1
+    },
+    {
+      "setX": 55,
+      "setY": 200
+    },
+    {
+      "setX": 450,
+      "setY": 200
+    },
+    {
+      "setX": 450,
+      "setY": 82
+    },
+    {
+      "vacuum": 0
+    },
+    {
+      "setX": 450,
+      "setY": 200
+    },
+    {
+      "run_process": 1
+    },
+    {
+      "setX": 450,
+      "setY": 82
+    },
+    {
+      "vacuum": 1
+    },
+    {
+      "setX": 450,
+      "setY": 200
+    },
+    {
+      "setX": 945,
+      "setY": 200
+    },
+    {
+      "setX": 945,
+      "setY": 82
+    },
+    {
+      "vacuum": 0
+    },
+    {
+      "setX": 945,
+      "setY": 200
+    }
+  ]
+}

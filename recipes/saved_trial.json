@@ -1,0 +1,66 @@
+{
+  "positions": {
+    "source1": {
+      "x": 55,
+      "y": 82
+    },
+    "source2": {
+      "x": 158,
+      "y": 82
+    },
+    "process1": {
+      "x": 450,
+      "y": 82
+    },
+    "process2": {
+      "x": 650,
+      "y": 82
+    },
+    "sink": {
+      "x": 945,
+      "y": 82
+    }
+  },
+  "safe_y": 200,
+  "transfer": [
+    {
+      "setY": "safe_y"
+    },
+    {
+      "setX": "source",
+      "setY": "safe_y"
+    },
+    {
+      "setX": "source",
+      "setY": "source_y"
+    },
+    {
+      "vacuum": 1
+    },
+    {
+      "setX": "source",
+      "setY": "safe_y"
+    },
+    {
+      "setX": "destination",
+      "setY": "safe_y"
+    },
+    {
+      "setX": "destination",
+      "setY": "destination_y"
+    },
+    {
+      "vacuum": 0
+    },
+    {
+      "setX": "destination",
+      "setY": "safe_y"
+    }
+  ],
+  "actions": [
+    {
+      "setX": 56,
+      "setY": 82
+    }
+  ]
+}
